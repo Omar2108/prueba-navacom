@@ -20,13 +20,16 @@ Backend: NodeJS / PHP (Se valora el uso de frameworks)
 Frontend: Javascript / jQuery / AngularJS
 
 #TECNOLOGIAS USADAS 
+
 Para el desarrollo de esta aplicacion web, se utilizo nodeJS, expressJS del lado del backend, del lado del frontend se utilizo hbs un gestor de plantillas de html que nos provee nodejs y como gestor de base de datos MySQL.
 
 #CONFIGURACION (window)
+
 1. Para iniciar el proyecto debera utilizar el comando npm init.
 2. Para instalar las depencias del proyecto (archivo package.json) debera utilizar el comando npm install.
 3. Para lanzar el servidor debera utilizar el comando npm run start modo produccion y npm run devstart para modo desarrollo.
 
 #FUNCIONALIDAD
+
 Esta aplicacion web, obtinen los datos de https://www.reddit.com/reddits.json, el cual proporciona la informacion relacionada con una aplicacion web llamada reddit, la cual esta compuesta por comunidad que son creadas por sus usuario para realizar publicaciones sobre diferentes temas 
 sociales. la aplicacion lee esta informacion la almacena en una base de datos tipo sql y hacer click en la imagen de la comunidad muestra en pantalla la informacion relacionada de dicha comunidad.
