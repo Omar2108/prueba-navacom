@@ -1,11 +1,4 @@
-fetch(`https://www.reddit.com/reddits.json`)
-    .then(response => response.json())
-    .then(data => {
-        let datos = data.data;
-        let arreglo = datos.children;
-        console.log(arreglo);
-    })
-
+const btnDatos = document.getElementById("btnDatos");
 const obtener_datos = () => {
 
     fetch(`https://www.reddit.com/reddits.json`)
@@ -34,3 +27,5 @@ const obtener_datos = () => {
             }
         });
 }
+
+btnDatos.addEventListener("click", obtener_datos);

@@ -5,7 +5,7 @@ var contenidos = {};
 //Obtenemos todos los contenidos
 contenidos.getContenidos = (callback) => {
     if (conn) {
-        conn.query('SELECT * FROM contenido',  (error, rows)=> {
+        conn.query('SELECT * FROM contenidos',  (error, rows)=> {
             if (error) {
                 throw error;
             } else {
@@ -19,7 +19,7 @@ contenidos.getContenidos = (callback) => {
 //Añadir un nuevo contenido
 contenidos.insertContenido =  (contenidoData, callback)=> {
     if (conn) {
-        conn.query('INSERT INTO contenido SET ?', contenidoData, (error, result) =>{
+        conn.query('INSERT INTO contenidos SET ?', contenidoData, (error, result) =>{
             if (error) {
 
                 throw error;
@@ -34,7 +34,7 @@ contenidos.insertContenido =  (contenidoData, callback)=> {
 //Obtenemos un usuario por su id
 contenidos.getContenidoById = (id,callback)=>{
 	if (conn) {
-		let sql = 'SELECT * FROM contenido WHERE id = ' + conn.escape(id);
+		let sql = 'SELECT * FROM contenidos WHERE id = ' + conn.escape(id);
 		conn.query(sql, (error, row) => {
 			if(error){
 				throw error;
