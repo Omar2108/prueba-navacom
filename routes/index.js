@@ -4,13 +4,13 @@ const redditController = require('../controllers/redditController');
 
 /* GET home page. */
 router.get('/', (req, res, next) =>{
-  res.render('index', { title: 'Express' });
+  res.render('index');
 });
 
 /* GET listar los contenidos. */
 router.get('/api/reddit/v1/contenidos', redditController.list);
 
-/* GET listar los contenidos. */
+/* GET obtener un contenido por su id. */
 router.get('/api/reddit/v1/contenido/:id', redditController.getContenidoById);
 
 /* POST agregar un nuevo contenido. */

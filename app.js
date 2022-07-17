@@ -1,3 +1,8 @@
+/* 
+@AUTOR Omar Rodriguez Chamorro < omar.rodriguez2108@hotmail.com >
+@VERSION 1.0.0    17-07-2022
+*/
+
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');

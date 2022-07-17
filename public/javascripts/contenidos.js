@@ -23,6 +23,8 @@ const btn_imagen22 = document.getElementById("imagen22");
 const btn_imagen23 = document.getElementById("imagen23");
 const btn_imagen24 = document.getElementById("imagen24");
 
+//funciones para mostrar el modal con la infromacion de cada comunidad.
+
 const mostrar_modal1 = () => {
     fetch(`http://localhost:3000/api/reddit/v1/contenidos`)
         .then(response => response.json())
